@@ -29,6 +29,8 @@ config BOARD_MSI_MS_6156
 	bool "MS-6156"
 config BOARD_MSI_MS_6178
 	bool "MS-6178"
+config BOARD_MSI_MS7133
+	bool "MS-7133"
 config BOARD_MSI_MS7135
 	bool "MS-7135 (K8N Neo3)"
 config BOARD_MSI_MS7260
@@ -46,6 +48,7 @@ source "src/mainboard/msi/ms6119/Kconfig"
 source "src/mainboard/msi/ms6147/Kconfig"
 source "src/mainboard/msi/ms6156/Kconfig"
 source "src/mainboard/msi/ms6178/Kconfig"
+source "src/mainboard/msi/ms7133/Kconfig"
 source "src/mainboard/msi/ms7135/Kconfig"
 source "src/mainboard/msi/ms7260/Kconfig"
 source "src/mainboard/msi/ms9185/Kconfig"
