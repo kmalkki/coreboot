@@ -1,0 +1,46 @@
+if BOARD_COMMELL_LV672
+
+config BOARD_SPECIFIC_OPTIONS # dummy
+	def_bool y
+	select ARCH_X86
+	select CPU_INTEL_SOCKET_LGA775
+	select NORTHBRIDGE_INTEL_I915
+	select NORTHBRIDGE_INTEL_SUBTYPE_I915GC
+	select SOUTHBRIDGE_INTEL_I82801FX
+	select SUPERIO_WINBOND_W83627EHG
+	select CHANNEL_XOR_RANDOMIZATION
+	select CHECK_SLFRCS_ON_RESUME
+	select MMCONF_SUPPORT
+	#select HAVE_SMI_HANDLER
+	select BOARD_ROMSIZE_KB_512
+	select GFXUMA
+
+config MAINBOARD_DIR
+	string
+	default commell/lv-672
+
+config MAINBOARD_PART_NUMBER
+	string
+	default "LV-672"
+
+config DCACHE_RAM_BASE
+	hex
+	default 0xffdf8000
+
+config DCACHE_RAM_SIZE
+	hex
+	default 0x8000
+
+config MMCONF_BASE_ADDRESS
+	hex
+	default 0xe0000000
+
+config IRQ_SLOT_COUNT
+	int
+	default 18
+
+config MAX_CPUS
+	int
+	default 1
+
+endif # BOARD_COMMELL_LV672

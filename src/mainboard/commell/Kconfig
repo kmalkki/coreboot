@@ -1,0 +1,17 @@
+if VENDOR_COMMELL
+
+choice
+        prompt "Mainboard model"
+
+config BOARD_COMMELL_LV672
+	bool "LV-672"
+
+endchoice
+
+source "src/mainboard/commell/lv-672/Kconfig"
+
+config MAINBOARD_VENDOR
+	string
+	default "Commell"
+
+endif # VENDOR_COMMELL

@@ -44,6 +44,8 @@ config VENDOR_BIOSTAR
 	bool "Biostar"
 config VENDOR_BROADCOM
 	bool "Broadcom"
+config VENDOR_COMMELL
+	bool "Commell"
 config VENDOR_COMPAQ
 	bool "Compaq"
 config VENDOR_DIGITALLOGIC
@@ -153,6 +155,7 @@ source "src/mainboard/bcom/Kconfig"
 source "src/mainboard/bifferos/Kconfig"
 source "src/mainboard/biostar/Kconfig"
 source "src/mainboard/broadcom/Kconfig"
+source "src/mainboard/commell/Kconfig"
 source "src/mainboard/compaq/Kconfig"
 source "src/mainboard/digitallogic/Kconfig"
 source "src/mainboard/eaglelion/Kconfig"
