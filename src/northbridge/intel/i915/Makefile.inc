@@ -18,7 +18,7 @@
 #
 
 ramstage-y += northbridge.c
-ramstage-y += gma.c
+#ramstage-y += gma.c
 ramstage-$(CONFIG_GENERATE_ACPI_TABLES) += acpi.c
 
 romstage-y += raminit.c
@@ -28,4 +28,4 @@ romstage-y += early_init.c
 romstage-y += errata.c
 romstage-y += ../i945/debug.c
 
-smm-y += udelay.c
+#smm-y += udelay.c
