@@ -31,6 +31,8 @@
 // here.
 #if CONFIG_SOUTHBRIDGE_INTEL_I82801GX
 #include "../../../southbridge/intel/i82801gx/i82801gx.h"
+#elif CONFIG_SOUTHBRIDGE_INTEL_I82801FX
+#include "../../../southbridge/intel/i82801fx/i82801fx.h"
 #elif CONFIG_SOUTHBRIDGE_INTEL_I82801DX
 #include "../../../southbridge/intel/i82801dx/i82801dx.h"
 #elif CONFIG_SOUTHBRIDGE_INTEL_SCH
